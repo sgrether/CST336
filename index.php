@@ -1,6 +1,6 @@
 <html><body>
 <?php
-echo 'Hello world';
+echo 'Hello sheeple, from Heroku.';
 ?>
 </body>
 </html>
