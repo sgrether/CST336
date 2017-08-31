@@ -1,7 +1,6 @@
 body {
-    /*background-color:#003300;*/
-    /*background-color:#ffff33;*/
-    background-image: url("../img/me.gif");
+    background-color:#003300;
+    /*background-image: url("img/me.gif");*/
     color:white;
     margin:0;
     padding:0;
