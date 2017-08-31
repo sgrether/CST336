@@ -1,5 +1,7 @@
 body {
-    background-color:black;
+    /*background-color:#003300;*/
+    /*background-color:#ffff33;*/
+    background-image: url("img/me.gif");
     color:white;
     margin:0;
     padding:0;
@@ -20,7 +22,6 @@ nav a { /*Links within nav container */
 nav a:hover {
     border-bottom:2px orange solid;
     font-size:2em;
-    /*transition:.9s;*/
 }
 
 #me #welcome-text {
@@ -55,16 +56,12 @@ td strong {
 }
 
 ul {
-    margin:0px auto;
-    padding-top:10px;
-    /*text-align:left;*/
-    /*padding-left:200px;*/
-
+    display: inline-block;
+    text-align:left;
 }
 
 .hobby {
     color:yellow;
-    text-align:center;
 }
 
 h1 {
