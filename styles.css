@@ -1,6 +1,8 @@
 body {
     background-color:black;
     color:white;
+    margin:0;
+    padding:0;
 }
 
 header, main, nav, footer {
@@ -19,6 +21,10 @@ nav a:hover {
     border-bottom:2px orange solid;
     font-size:2em;
     /*transition:.9s;*/
+}
+
+#me #welcome-text {
+    float:left;
 }
 
 footer {
@@ -58,7 +64,7 @@ ul {
 
 .hobby {
     color:yellow;
-   
+    text-align:center;
 }
 
 h1 {
@@ -67,7 +73,7 @@ h1 {
     margin-bottom:0px;
 }
 
-#contact {
+#google-form {
     text-align:center;
-    margin:0px auto;
+    /*margin:0px auto;*/
 }
