@@ -1,0 +1,63 @@
+nav a {
+    text-align: center;
+    color: blue;
+    font-size: 20px;
+    width: 50%;
+}
+
+nav {
+    background-color: #660000;
+    margin-top: 50px;
+    padding: 5px;
+}
+
+.link {
+    color: blue;
+}
+
+header, main, nav, footer {
+    text-align: center;
+    font-family:'Merriweather';
+}
+
+header {
+    color: #ff0000;
+    font-size: 30px;
+    height: 50px;
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+body {
+    background-color: black;
+    margin:0;
+    padding:0;
+}
+
+figcaption {
+    color: gray;
+}
+
+#frontImg {
+    text-align: center;
+    padding-top: 20px
+}
+
+.quote {
+    font-style: italic;
+}
+
+#vegacard {
+    height: auto; 
+    width: auto; 
+    max-width: 1000px; 
+    max-height: 1000px;
+}
+
+footer {
+    font-size:.65em;
+    color:gray;
+}
