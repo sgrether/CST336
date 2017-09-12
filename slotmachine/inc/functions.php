@@ -38,7 +38,7 @@ function displayPoints($randNum1, $randNum2, $randNum3) {
 
 function play() {
     for($i = 0; $i < 3; $i++) {
-        ${"randNum" . $i} = rand(0,0);
+        ${"randNum" . $i} = rand(0,3);
         displaySymbol(${"randNum" . $i}, $i);
     }
     displayPoints($randNum0, $randNum1, $randNum2); 
