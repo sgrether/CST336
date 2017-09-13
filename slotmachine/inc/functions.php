@@ -25,7 +25,7 @@ function displayPoints($randNum1, $randNum2, $randNum3) {
                     break;
             case 2: $totalPoints = 250;
                     break;
-            case 3: $totalPoints = 90001;
+            case 3: $totalPoints = 900;
                     break;
         }
         echo "<h2>You won $totalPoints points!</h2>";
