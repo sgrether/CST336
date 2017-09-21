@@ -1,4 +1,7 @@
-<?php session_start();?>
+<?php 
+session_start(); 
+if ($_SESSION['rolls'] == null) $_SESSION['rolls'] = array();
+?>
 <!DOCTYPE html>
 <html>
     

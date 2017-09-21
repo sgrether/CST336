@@ -45,7 +45,6 @@ function printHistory($rolls) {
 }
 
 function clearHistory() {
-    // $_SESSION['rolls'] = array();
     while (sizeof($_SESSION['rolls']) > 0) {
         array_pop($_SESSION['rolls']);
     }
