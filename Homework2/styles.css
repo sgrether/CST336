@@ -1,0 +1,80 @@
+header, body, footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Playfair Display';
+}
+
+h1 {
+    font-size: 100px;
+    border-style: groove;
+    border-color: #00004d;
+    color: #800000;
+}
+
+#D4 {
+    background-image: url('img/D4.png'); 
+    width: 224px;
+    height: 225px;
+    background-color: black;
+    background-repeat: no-repeat;
+    border-color: #00004d;
+}
+
+#D6 {
+    background-image: url('img/D6.png'); 
+    width: 224px;
+    height: 225px;
+    background-color: black;
+    background-repeat: no-repeat;
+    border-color: #00004d;
+}
+
+#D8 {
+    background-image: url('img/D8.png'); 
+    width: 224px;
+    height: 225px;
+    background-color: black;
+    background-repeat: no-repeat;
+    border-color: #00004d;
+}
+
+#D10 {
+    background-image: url('img/D10.png');
+    width: 224px;
+    height: 225px;
+    background-color: black;
+    background-repeat: no-repeat;
+    border-color: #00004d;
+}
+
+#D12 {
+    background-image: url('img/D12.png');
+    width: 224px;
+    height: 225px;
+    background-color: black;
+    background-repeat: no-repeat;
+    border-color: #00004d;
+}
+
+#D20 {
+    background-image: url('img/D20.png');
+    width: 224px;
+    height: 225px;
+    background-color: black;
+    background-repeat: no-repeat;
+    border-color: #00004d;
+}
+
+#result {
+    font-family: 'Playfair Display';
+    color: #800000;
+    font-size: 100px;
+    border-style: dashed;
+    border-color: #00004d;
+}
+
+footer {
+    vertical-align: bottom;
+    color: gray;
+}
