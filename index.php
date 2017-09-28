@@ -13,6 +13,7 @@
             <a href="Homework1/index.html">Homework1</a>
             <a href="slotmachine/index.php">Slot Machine</a>
             <a href="Homework2/index.php">Homework2</a>
+            <a href="Lab4/index.php">Lab4</a>
         </nav>
     </body>
 </html>
