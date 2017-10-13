@@ -14,6 +14,7 @@
             <a href="slotmachine/index.php">Slot Machine</a>
             <a href="Homework2/index.php">Homework2</a>
             <a href="Lab4/index.php">Lab4</a>
+            <a href="Homework3/index.php">Homework3</a>
         </nav>
     </body>
 </html>
