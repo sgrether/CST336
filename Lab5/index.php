@@ -8,9 +8,9 @@ $password = '216f3b0b';
 $conn = new mysqli($host, $username, $password, $dbname);
 if($conn -> connect_error) {
     die("Connection failed: ". $conn->connect_error);
-} else {
-    echo "database connected successfully <br>";
-}
+} //else {
+//     echo "database connected successfully <br>";
+// }
 
 if($_GET['filter'] != '') {
     $sql = 'SELECT * FROM device WHERE device'.$_GET['dropdown'].' = "'.$_GET['filter'].'"';
