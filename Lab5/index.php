@@ -47,13 +47,13 @@ $table = $conn->query($sql);
     <body>
         <form method="get">
             <select name="dropdown">
-                <option value="">None</option>
+                <option value="">Filter by:</option>
                 <option value="Type">Type</option>
                 <option value="Name">Name</option>
             </select>
             
-            <input type="radio" name="name" value="name"> Name
-            <input type="radio" name="price" value="price"> Price
+            <input type="radio" name="name" value="name"> Sort by Name
+            <input type="radio" name="price" value="price"> Sort by Price
             <input type="checkbox" name="available" value="Available"> Availability
             
             <input type="text" name="filter">
