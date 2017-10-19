@@ -13,7 +13,7 @@ if($conn -> connect_error) {
 // }
 
 if($_GET['filter'] != '') {
-    $sql = 'SELECT * FROM device WHERE device'.$_GET['dropdown'].' = "'.$_GET['filter'].'"';
+    $sql = 'SELECT * FROM device WHERE device'.$_GET['dropdown'].' LIKE "%'.$_GET['filter'].'%"';
     if($_GET['available'] == 'Available') {
         $sql = $sql." AND status = 'available'";
     }
