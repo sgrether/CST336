@@ -6,7 +6,7 @@ $conn = dbConnect();
 if(isset($_POST['submit'])) {
     $username = $_POST['username'];
     $pass = $_POST['password'];
-    $sql = "SELECT * FROM admin WHERE userName='$username' AND password='$pass'";
+    $sql = "SELECT * FROM admin WHERE userName='$username' AND password='".sha1($pass)."'";
     // echo $sql;
     
     $table = $conn->query($sql);
@@ -30,7 +30,6 @@ if(isset($_POST['submit'])) {
         <?php
             if(isset($_POST['submit'])) {
                 if($table->num_rows > 0) {
-                    // echo "Login Successful<br>";
                     $row = $table->fetch_assoc();
                     $_SESSION['adminName'] = $row['firstName']. " " . $row['lastName'];
                     header("Location: admin.php");
