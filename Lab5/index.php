@@ -14,18 +14,18 @@ if($conn -> connect_error) {
 
 if($_GET['filter'] != '') {
     $sql = 'SELECT * FROM device WHERE device'.$_GET['dropdown'].' LIKE "%'.$_GET['filter'].'%"';
-    if($_GET['available'] == 'Available') {
+    if($_GET['available'] == 'available') {
         $sql = $sql." AND status = 'available'";
     }
 } else {
-    if($_GET['available'] == 'Available') {
+    if($_GET['available'] == 'available') {
         $sql = 'SELECT * FROM device WHERE status = "available"';
     } else {
         $sql = 'SELECT * FROM device';
     }
 }
 
-if($_GET['price'] == 'price') {
+if($_GET['orderby'] == 'price') {
     $sql = $sql . " ORDER BY price";
 } else {
     $sql = $sql . " ORDER BY deviceName";
@@ -52,9 +52,9 @@ $table = $conn->query($sql);
                 <option value="Name">Name</option>
             </select>
             
-            <input type="radio" name="name" value="name"> Sort by Name
-            <input type="radio" name="price" value="price"> Sort by Price
-            <input type="checkbox" name="available" value="Available"> Availability
+            <input type="radio" name="orderby" value="name"> Sort by Name
+            <input type="radio" name="orderby" value="price"> Sort by Price
+            <input type="checkbox" name="available" value="available"> Availability
             
             <input type="text" name="filter">
             <input type="submit" value="Submit">
@@ -85,6 +85,5 @@ $table = $conn->query($sql);
             }
         ?>
         </table>
-        
     </body>
 </html>
