@@ -10,7 +10,7 @@ if(isset($_GET['addUser'])) {
     
     $conn = dbConnect();
     $table = $conn->query($sql);
-    echo "User was added!";
+    header("Location: admin.php");
 }
 
 if(!isset($_SESSION['username'])) {
@@ -23,6 +23,11 @@ if(!isset($_SESSION['username'])) {
     <head>
         <title>Admin: Add new user </title>
         <style>@import url(styles.css);</style>
+        <script>
+            function confirmAdd() {
+                alert("User has been added.");
+            }
+        </script>
     </head>
     <body>
         <h1> Tech Checkout System: Adding a New User </h1>
@@ -50,7 +55,7 @@ if(!isset($_SESSION['username'])) {
                 <option value="" >- Select One -</option>
                 <?=departments(0)?>
             </select>
-            <input type="submit" value="Add User" name="addUser">
+            <input onclick="confirmAdd()" type="submit" value="Add User" name="addUser">
         </form>
     </body>
 </html>
