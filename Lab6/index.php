@@ -7,19 +7,21 @@ if(isset($_POST['submit'])) {
     $username = $_POST['username'];
     $pass = $_POST['password'];
     $sql = "SELECT * FROM admin WHERE userName='$username' AND password='".sha1($pass)."'";
-    // echo $sql;
     
-    $table = $conn->query($sql);
+    $_SESSION['username'] = $username;
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
 }
 
 ?>
 
 <!DOCTYPE>
 <html>
-    <header>
+    <head>
         <title>Admin Login</title>
         <h1>Admin Login</h1>
-    </header>
+        <style>@import url(styles.css);</style>
+    </head>
     <body>
         
         <form method="post">
@@ -29,8 +31,8 @@ if(isset($_POST['submit'])) {
         </form>
         <?php
             if(isset($_POST['submit'])) {
-                if($table->num_rows > 0) {
-                    $row = $table->fetch_assoc();
+                if($stmt->rowCount() > 0) {
+                    $row = $stmt->fetch(PDO::FETCH_ASSOC);
                     $_SESSION['adminName'] = $row['firstName']. " " . $row['lastName'];
                     header("Location: admin.php");
                 } else {

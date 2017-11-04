@@ -1,29 +1,33 @@
 <?php
+session_start();
 include 'function.php';
 
 if(isset($_GET['addUser'])) {
     $sql = "INSERT INTO user
                 (firstName, lastName, email, phone, role, deptId)
             VALUES
-                ('".$_GET["firstName"]."', '".$_GET["lastName"]."', '".$_GET["email"]."', '".$_GET["phoneNum"]."', '".$_GET["role"]."', '".$_GET["department"]."')";
+                ('".$_GET["firstName"]."', '".$_GET["lastName"]."', '".$_GET["email"]."', '".$_GET["phone"]."', '".$_GET["role"]."', '".$_GET["deptId"]."')";
     
     $conn = dbConnect();
-    // echo $sql."<br>";
     $table = $conn->query($sql);
     echo "User was added!";
 }
 
+if(!isset($_SESSION['username'])) {
+    header("Location: index.php");
+}
 ?>
 
 <!DOCTYPE html>
 <html>
     <head>
         <title>Admin: Add new user </title>
+        <style>@import url(styles.css);</style>
     </head>
     <body>
         <h1> Tech Checkout System: Adding a New User </h1>
-        <form method="GET">
-            User Id: <input type="text" name="userId" />
+        <form method="GET" class="forms">
+            User Id: <input type="text" name="id" />
             <br />
             First Name:<input type="text" name="firstName" />
             <br />
@@ -31,7 +35,7 @@ if(isset($_GET['addUser'])) {
             <br/>
             Email: <input type= "email" name ="email"/>
             <br/>
-            Phone Number: <input type ="text" name= "phoneNum"/>
+            Phone Number: <input type ="text" name= "phone"/>
             <br />
             Role: 
             <select name="role">
@@ -42,9 +46,9 @@ if(isset($_GET['addUser'])) {
             </select>
             <br />
             Department: 
-            <select name="department">
-                <option value="" > Select One </option>
-                <?=departments()?>
+            <select name="deptId">
+                <option value="" >- Select One -</option>
+                <?=departments(0)?>
             </select>
             <input type="submit" value="Add User" name="addUser">
         </form>

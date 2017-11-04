@@ -1,0 +1,24 @@
+body {
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+#users {
+    display: inline-block;
+    text-align: left;
+}
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+}
+
+.forms {
+    display: inline-block;
+    text-align: left;
+}
