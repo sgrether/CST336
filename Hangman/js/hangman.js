@@ -2,6 +2,7 @@ var selectedWord = "";
 var selectedHint = "";
 var board = "";
 var remainingGuesses = 6;
+var hintClicked = false;
 var alphabet = ['A', 'B',  'C', 'D', 'E', 'F', 'G', 'H', 
                 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 
                 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
@@ -37,7 +38,9 @@ function updateBoard() {
     }
     
     $("#word").append("<br>");
-    $("#word").append("<span class='hint'>Hint: " + selectedHint + "</span>");
+    if(hintClicked) {
+        $("#word").append("<span class='hint'>Hint: " + selectedHint + "</span>");
+    }
 }
 
 function createLetters() {
@@ -110,7 +113,12 @@ function disableButton(btn) {
 
 $("#letterBtn").click(function() {
     var boxVal = $("#letterBtn").val();
-    console.log("You pressed the button. " + boxVal);
+});
+
+$("#hint").click(function() {
+    $("#word").append("<span class='hint'>Hint: " + selectedHint + "</span>");
+    disableButton($(this));
+    hintClicked = true;
 });
 
 $(".replayBtn").on("click", function() {
