@@ -23,8 +23,6 @@ function showUser() {
         echo "<td>".$row['email']."</td>";
         echo "<td><a href='updateUser.php?id=".$row['id']."'>Update</a></td>";
         echo "<td><a onclick='return confirmDelete()' href='deleteUser.php?id=".$row['id']."'>Delete</a></td>";
-        // echo " <a href='updateUser.php?id=".$row['id']."'>Update</a>";
-        // echo " <a onclick='return confirmDelete()' href='deleteUser.php?id=".$row['id']."'>Delete</a><br>";
         echo "</tr>";
     }
 }

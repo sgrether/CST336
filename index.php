@@ -14,5 +14,6 @@
         <a href="practice/index.html">Practice</a>
         <a href="slotmachine/index.php">SlotMachine</a>
         <a href="Hangman/index.html">Hangman</a>
+        <a href="NumberGuess/index.php">NumberGuess</a>
     </body>
 </html>
