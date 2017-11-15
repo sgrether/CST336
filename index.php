@@ -15,5 +15,6 @@
         <a href="slotmachine/index.php">SlotMachine</a>
         <a href="Hangman/index.html">Hangman</a>
         <a href="NumberGuess/index.php">NumberGuess</a>
+        <a href="TeamProject/index.php">TeamProject</a>
     </body>
 </html>
