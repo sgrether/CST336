@@ -6,7 +6,7 @@
     <body>
         <a href="Homework1/index.php">Homework1</a>
         <a href="Homework2/index.php">Homework2</a>
-        <a href="Homework2/index.php">Homework2</a>
+        <a href="Homework3/index.php">Homework3</a>
         <a href="Lab4/index.php">Lab4</a>
         <a href="Lab5/index.php">Lab5</a>
         <a href="Lab6/index.php">Lab6</a>
@@ -16,5 +16,6 @@
         <a href="Hangman/index.html">Hangman</a>
         <a href="NumberGuess/index.php">NumberGuess</a>
         <a href="TeamProject/index.php">TeamProject</a>
+        <a href="Homework4/index.php">Homework4</a>
     </body>
 </html>
