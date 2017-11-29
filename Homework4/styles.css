@@ -1,23 +1,23 @@
 header, body, footer {
-    text-align: center;
-    background-color: black;
-    color: white;
-    font-family: 'Playfair Display';
+    text-align: center !important;
+    background-color: black !important;
+    color: white !important;
+    font-family: 'Playfair Display' !important;
 }
 
 h1 {
-    font-size: 100px;
-    border-style: groove;
-    border-color: #00004d;
-    color: #800000;
+    font-size: 100px !important;
+    border-style: groove !important;
+    border-color: #00004d !important;
+    color: #800000 !important;
 }
 
 #D4, #D6, #D8, #D10, #D12, #D20 {
-    width: 224px;
-    height: 225px;
-    background-color: black;
-    background-repeat: no-repeat;
-    border-color: #00004d;
+    width: 224px !important;
+    height: 225px !important;
+    background-color: black !important;
+    background-repeat: no-repeat !important;
+    border-color: #00004d !important;
 }
 
 #D4 {
@@ -45,14 +45,18 @@ h1 {
 }
 
 #result {
-    font-family: 'Playfair Display';
-    color: #800000;
-    font-size: 100px;
-    border-style: dashed;
-    border-color: #00004d;
+    font-family: 'Playfair Display' !important;
+    color: #800000 !important;
+    font-size: 100px !important;
+    border-style: dashed !important;
+    border-color: #00004d !important;
+}
+
+#historyButton, #clearHistory {
+    color: black !important;
 }
 
 footer {
-    vertical-align: bottom;
-    color: gray;
+    vertical-align: bottom !important;
+    color: gray !important;
 }
