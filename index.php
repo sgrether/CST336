@@ -17,5 +17,6 @@
         <a href="NumberGuess/index.php">NumberGuess</a>
         <a href="TeamProject/index.php">TeamProject</a>
         <a href="Homework4/index.php">Homework4</a>
+        <a href="Lab8/index.html">Lab8</a>
     </body>
 </html>
