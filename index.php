@@ -18,5 +18,6 @@
         <a href="TeamProject/index.php">TeamProject</a>
         <a href="Homework4/index.php">Homework4</a>
         <a href="Lab8/index.html">Lab8</a>
+        <a href="Project/index.php">Final Project</a>
     </body>
 </html>
