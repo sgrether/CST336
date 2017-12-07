@@ -30,7 +30,7 @@ if(!isset($_SESSION['username'])) {
         </script>
     </head>
     <body>
-        <h1> Tech Checkout System: Adding a New User </h1>
+        <h1>Adding a New User</h1>
         <form method="GET" class="forms">
             User Id: <input type="text" name="id" />
             <br />

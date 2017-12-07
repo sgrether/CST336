@@ -47,7 +47,7 @@ if(!isset($_SESSION['username'])) {
         </script>
     </head>
     <body>
-        <h1> Tech Checkout System: Updating User Info</h1>
+        <h1>Updating User Info</h1>
         <form method="GET" class="forms">
             <input type="hidden" name="id" value="<?=$userInfo['id']?>"/>
             First Name:<input type="text" name="firstName" value="<?=$userInfo['firstName']?>"/>
